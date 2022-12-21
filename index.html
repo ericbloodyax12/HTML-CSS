@@ -14,13 +14,22 @@
 <p id="paragraph">
     paragraph
 </p>
-
+<form action="https://www.youtube.com/watch?v=yY7iGa4t9-I&list=PLqFTZCcUCeaTJypQZImbNVKOZxnkXLa1n&index=44"> <! устанавливает web forms связь>
 <label>
-    <input type="radio" name="door">Indoor
+    <input type="radio" name="door">Indoor  <! выборка только одного>
     <input type="radio" name="door">Outdoor
-
 </label>
-<label><input id="indoor" type="checkbox" name="indoor-outdoor">+</label>
+<label><input id="indoor" type="checkbox" name="indoor-outdoor">+</label> <! выборка нескольких>
 <label><input id="indoor" type="checkbox" name="indoor-outdoor">-</label>
+<label for="indoor">
+    <input id="indoor" value="indoor" type="radio" name="indoor-outdoor">Indoor <! рекомендованное оформление>
+</label>
+<label for="outdoor">
+    <input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor">Outdoor
+</label>
+    <button type="submit">Submit</button>
+</form>
+<input type="radio" name="test-name" >a
+<input type="radio" name="test-name" checked>b <! выбор "b" по умолчанию>
 </body>
 </html>
